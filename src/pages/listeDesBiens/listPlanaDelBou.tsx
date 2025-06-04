@@ -463,7 +463,7 @@ const ListPlanaDelBou: React.FC = () => {
           title={modalTitle}
           images={modalImages}
           pdfUrl={modalPdfUrl}
-          onActionClick={() => console.log("Action Ver más déclenchée !")}
+          onActionClick={() => {}}
           onClose={handleCloseModal}
         />
       )}

@@ -21,7 +21,6 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (form.current) {
-      console.log("Form reference:", form.current); // Debugging log
       // Envoi vers toi (Contact Us)
       emailjs
         .sendForm(
@@ -31,9 +30,7 @@ const ContactForm: React.FC = () => {
           "AYB2FEpYiuysRSuC-"
         )
         .then(
-          (result) => {
-            console.log("Message reçu (TOI):", result);
-          },
+          (result) => {},
           (error) => {
             console.error("Erreur d'envoi (TOI):", error);
           }
@@ -50,7 +47,6 @@ const ContactForm: React.FC = () => {
         )
         .then(
           (result) => {
-            console.log("EmailJS result:", result); // Debugging log
             alert("Message envoyé avec succès !");
           },
           (error) => {

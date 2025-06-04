@@ -40,8 +40,9 @@ const NausHesei: React.FC = () => {
         <title>Naus Hesei - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez les biens industriels Naus Hesei, situés à l'entrée d'Andorre."
+          content="Découvrez les biens immobiliers Naus Hesei, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/naus-hesei" />
       </Helmet>
 
       <div className="zone-page">

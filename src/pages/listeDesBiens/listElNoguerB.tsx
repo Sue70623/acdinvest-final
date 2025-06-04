@@ -315,7 +315,7 @@ const ListElNoguerB: React.FC = () => {
           images={modalImages}
           pdfUrl={modalPdfUrl}
           onClose={handleCloseModal}
-          onActionClick={() => console.log("Voir plus")}
+          onActionClick={() => {}}
         />
       )}
     </DefaultLayout>

@@ -1,6 +1,7 @@
 import React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCard from "../../components/PropertyCard";
+import { Helmet } from "react-helmet";
 import "./typePages.css";
 
 const PoligonIIndustria = () => {
@@ -9,6 +10,14 @@ const PoligonIIndustria = () => {
       title="Polígon I Industria"
       description="Explore the industrial zones and properties available."
     >
+      <Helmet>
+        <title>Polígon i Indústria - ACD Invest</title>
+        <meta
+          name="description"
+          content="Découvrez nos biens industriels et espaces professionnels à Andorre."
+        />
+        <link rel="canonical" href="https://acdinvest.ad/poligon-i-industria" />
+      </Helmet>
       <meta
         name="description"
         content="Descobreix les zones industrials i les propietats disponibles a Andorra."

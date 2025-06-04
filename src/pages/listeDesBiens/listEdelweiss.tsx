@@ -88,7 +88,7 @@ const ListEdelweiss: React.FC = () => {
         caracteristics={["100 m²", "3 habitacions", "2 banys"]}
         amenities={["parking", "terrassa"]}
         status="Disponible"
-        onViewGallery={() => console.log("Gallery opened for Edelweiss 1")}
+        onViewGallery={() => {}}
         reverse={false}
       />
 
@@ -122,7 +122,7 @@ const ListEdelweiss: React.FC = () => {
           title={modalTitle}
           images={modalImages}
           pdfUrl={modalPdfUrl}
-          onActionClick={() => console.log("Action Ver más déclenchée !")}
+          onActionClick={() => {}}
           onClose={handleCloseModal}
         />
       )}

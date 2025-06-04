@@ -14,8 +14,9 @@ const ViuLaCiutat = () => {
         <title>Viu La Ciutat - ACD Invest</title>
         <meta
           name="description"
-          content="Explora els nostres immobles urbans i gaudeix de la vida a la ciutat amb ACD Invest."
+          content="Découvrez nos biens immobiliers en ville. Profitez de la vie urbaine à Andorre."
         />
+        <link rel="canonical" href="https://acdinvest.ad/viu-la-ciutat" />
       </Helmet>
 
       <h1 className="type-page-title">VIU LA CIUTAT</h1>

@@ -37,8 +37,9 @@ const ElNoguerB: React.FC = () => {
         <title>El Noguer B - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez El Noguer B, des appartements modernes et fonctionnels à Sant Julià de Lòria."
+          content="Découvrez les biens immobiliers El Noguer B, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/el-noguer-b" />
       </Helmet>
 
       <div className="zone-page">

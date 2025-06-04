@@ -11,7 +11,6 @@ import ArticleModal from "../../components/ArticleModal";
 
 // Ensure lightbox functionality is consistent
 const handleImageClick = (imageUrl: string) => {
-  console.log("Image clicked:", imageUrl);
   // Open lightbox logic here
 };
 
@@ -55,8 +54,9 @@ const XiuletHauss: React.FC = () => {
         <title>Xiulet Hauss - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez Xiulet Hauss, un habitat unique au cœur de Sant Julià de Lòria."
+          content="Découvrez les biens immobiliers Xiulet Hauss, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/xiulet-hauss" />
       </Helmet>
 
       <div className="zone-page">

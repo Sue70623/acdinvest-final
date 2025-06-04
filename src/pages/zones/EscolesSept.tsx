@@ -18,7 +18,7 @@ const EscolesSept: React.FC = () => {
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/habitacio-1-1-Escoles-7-andorra.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-2/terrasa-1-2-Escoles-7-Andorra.webp",
 
-    // (ajouter ici les vraies images finales)
+    // (ajouter ici les vraies images finals)
   ];
 
   const handleOpenGallery = () => setIsGalleryOpen(true);
@@ -39,8 +39,9 @@ const EscolesSept: React.FC = () => {
         <title>Escoles Sept - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez les biens immobiliers Escoles Sept, situés dans un emplacement central à Sant Julià de Lòria."
+          content="Découvrez les biens immobiliers Escoles Sept, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/escolessept" />
       </Helmet>
 
       <div className="zone-page">

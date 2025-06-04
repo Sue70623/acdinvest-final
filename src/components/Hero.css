@@ -60,6 +60,7 @@
 .next-video {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   background: #c59d6b;
   color: white;
   font-size: 2rem;
@@ -69,6 +70,8 @@
   opacity: 0.6;
   transition: opacity 0.3s ease, background 0.3s ease;
   z-index: 3;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .prev-video {
@@ -82,6 +85,12 @@
 .prev-video:hover,
 .next-video:hover {
   opacity: 1;
+}
+
+.prev-video:focus,
+.next-video:focus {
+  outline: 2px solid #fff;
+  background: #b08a5c;
 }
 
 /* ✅ TITRE H1 SOUS LA VIDÉO */
@@ -118,4 +127,38 @@
     max-width: 100%;
     height: auto;
   }
+}
+
+@media (max-width: 1024px) {
+  .video-container {
+    height: 55vw;
+    min-height: 320px;
+    max-height: 70vh;
+  }
+  .prev-video,
+  .next-video {
+    font-size: 1.5rem;
+    padding: 7px;
+    left: 4px;
+    right: 4px;
+  }
+  .prev-video { left: 4px; }
+  .next-video { right: 4px; }
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    height: 45vw;
+    min-height: 180px;
+    max-height: 45vh;
+  }
+  .prev-video,
+  .next-video {
+    font-size: 1.1rem;
+    padding: 5px;
+    left: 2px;
+    right: 2px;
+  }
+  .prev-video { left: 2px; }
+  .next-video { right: 2px; }
 }

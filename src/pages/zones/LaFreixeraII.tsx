@@ -35,8 +35,9 @@ const LaFreixeraII: React.FC = () => {
         <title>La Freixera II - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez La Freixera II, un projet immobilier moderne et durable à Les Arades."
+          content="Découvrez les biens immobiliers La Freixera II, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/la-freixera-ii" />
       </Helmet>
 
       <div className="zone-page">

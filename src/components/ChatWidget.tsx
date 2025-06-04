@@ -9,6 +9,7 @@ const ChatWidget: React.FC = () => {
         href="https://chatwith.io/s/330631307849"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="WhatsApp"
       >
         <FaWhatsapp />
       </a>

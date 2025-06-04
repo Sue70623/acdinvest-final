@@ -109,6 +109,61 @@
   transform: scale(1.05);
 }
 
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2.2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1200;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.lightbox-prev {
+  left: 8px;
+}
+
+.lightbox-next {
+  right: 8px;
+}
+
+@media (max-width: 1024px) {
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 1.7rem;
+    padding: 7px;
+    left: 4px;
+    right: 4px;
+  }
+  .lightbox-prev { left: 4px; }
+  .lightbox-next { right: 4px; }
+}
+
+@media (max-width: 600px) {
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 1.3rem;
+    padding: 5px;
+    left: 2px;
+    right: 2px;
+  }
+  .lightbox-prev { left: 2px; }
+  .lightbox-next { right: 2px; }
+}
+
+.lightbox-prev:focus,
+.lightbox-next:focus {
+  outline: 2px solid #c59d6b;
+  background: rgba(197,157,107,0.8);
+}
+
 @media (max-width: 768px) {
   .modal-content {
     max-width: 95%;

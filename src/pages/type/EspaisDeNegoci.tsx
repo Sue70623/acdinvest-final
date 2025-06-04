@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCard from "../../components/PropertyCard";
 import "./typePages.css";
@@ -9,6 +10,14 @@ const EspaisDeNegoci = () => {
       title="Espais De Negoci"
       description="Descobreix espais de negoci adaptats a les teves necessitats professionals."
     >
+      <Helmet>
+        <title>Espais de Negoci - ACD Invest</title>
+        <meta
+          name="description"
+          content="Découvrez nos espaces de travail et bureaux à Andorre."
+        />
+        <link rel="canonical" href="https://acdinvest.ad/espais-de-negoci" />
+      </Helmet>
       <h1 className="type-page-title">ESPAIS DE NEGOCI</h1>
       <p className="type-page-description">
         Explora els nostres espais de negoci, pensats per impulsar el teu èxit

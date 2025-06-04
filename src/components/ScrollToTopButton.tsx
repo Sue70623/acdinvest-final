@@ -26,7 +26,7 @@ const ScrollToTopButton: React.FC = () => {
   }, []);
 
   return isVisible ? (
-    <button className="scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
+    <button className="floating-button scroll-to-top" onClick={scrollToTop} aria-label="Scroll to top">
       ↑
     </button>
   ) : null; // Retourne null au lieu de false

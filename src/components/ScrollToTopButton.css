@@ -1,17 +1,6 @@
-/* Bouton de retour en haut */
+/* Les styles sont désormais centralisés dans FloatingButtonsWrapper.css pour la taille, la couleur, le radius, etc. */
 .scroll-to-top {
-  width: 60px;
-  height: 60px;
-  background-color: #c59d6b;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Peut rester vide ou ne contenir que des overrides spécifiques si besoin */
 }
 
 /* Effet au survol */

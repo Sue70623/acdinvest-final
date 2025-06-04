@@ -203,7 +203,7 @@ const ListEscolesSept: React.FC = () => {
           title={modalTitle}
           images={modalImages}
           pdfUrl={modalPdfUrl}
-          onActionClick={() => console.log("Voir plus")}
+          onActionClick={() => {}}
           onClose={handleCloseModal}
         />
       )}

@@ -52,8 +52,9 @@ const PlanaDelBou: React.FC = () => {
         <title>Plana del Bou - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez Plana del Bou, un espace résidentiel intégré à la nature avec des vues imprenables."
+          content="Découvrez les biens immobiliers Plana del Bou, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/planadelbou" />
       </Helmet>
 
       <div className="zone-page">

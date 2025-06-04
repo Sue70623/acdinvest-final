@@ -35,6 +35,7 @@ const Edelweiss: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers Edelweiss, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/edelweiss" />
       </Helmet>
 
       <div className="zone-page">

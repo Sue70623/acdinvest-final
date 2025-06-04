@@ -15,7 +15,7 @@ const EresdelPoble: React.FC = () => {
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/fontaneda.webp",
-    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/vista-muntanya-fontaneda-andorra-casa-rural.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(17)ERADECALBOU1/vista-muntanya-fontaneda-casa-rural.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/calma-muntanya-era-ermita-fontaneda.webp",
@@ -50,7 +50,6 @@ const EresdelPoble: React.FC = () => {
 
   const openEntornModal = () => {
     setIsEntornModalOpen(true);
-    console.log("Entorn modal opened");
   };
 
   const closeEntornModal = () => {
@@ -66,8 +65,9 @@ const EresdelPoble: React.FC = () => {
         <title>Eres del Poble - ACD Invest</title>
         <meta
           name="description"
-          content="Découvrez les maisons rurales d'Eres del Poble, au cœur du village de Fontaneda."
+          content="Découvrez les biens immobiliers Eres del Poble, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <link rel="canonical" href="https://acdinvest.ad/zones/eresdelpoble" />
       </Helmet>
 
       <div className="zone-page">
