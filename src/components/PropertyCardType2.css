@@ -1,0 +1,172 @@
+.property-card-type2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
+  justify-content: space-between;
+  border-top: 4px solid #c59d6b;
+  border-left: 4px solid #c59d6b;
+  border-right: 4px solid #c59d6b;
+  padding: 30px;
+  margin: 0;
+  background-color: #212226;
+  color: white;
+  position: relative; /* Ensure arrows are positioned relative to the container */
+  overflow: visible; /* Allow arrows to overlap slightly within the container */
+}
+
+.property-card-type2.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center; /* Center content horizontally */
+}
+
+.property-card-type2.reverse .text-section {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.carousel-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-frame {
+  display: flex;
+  gap: 10px; /* Espacement entre les images */
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.carousel-frame img {
+  width: calc(33.33% - 10px); /* Chaque image occupe 1/3 de la largeur */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  aspect-ratio: 3/ 4;
+}
+
+.nav {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #c59d6b;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.nav.prev {
+  left: -40px;
+}
+
+.nav.next {
+  right: -40px;
+}
+
+.property-card-type2 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem; /* Augmente la taille pour une meilleure lisibilité */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2; /* Assure que les flèches sont au-dessus des images */
+}
+
+/* Flèche gauche */
+.property-card-type2 .arrow.left {
+  left: 0; /* Colle visuellement au bord de l'image */
+}
+
+/* Flèche droite */
+.property-card-type2 .arrow.right {
+  right: 0; /* Colle visuellement au bord de l'image */
+}
+
+.action-button {
+  width: 60px;
+  height: 60px;
+  background-color: #c59d6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+.action-button:hover {
+  background-color: #b08a5c;
+  transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .property-card-type2 {
+    flex-direction: column;
+  }
+
+  .property-card-type2.reverse {
+    flex-direction: column;
+  }
+
+  .action-button {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-card-type2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .carousel-frame {
+    max-width: 100%;
+  }
+
+  .carousel-frame img {
+    width: calc(33.33% - 5px); /* Ajuste la largeur pour les petits écrans */
+  }
+
+  .nav.prev {
+    left: 5px;
+  }
+
+  .nav.next {
+    right: 5px;
+  }
+
+  .action-button {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
+}

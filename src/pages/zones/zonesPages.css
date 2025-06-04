@@ -1,0 +1,38 @@
+.zone-page {
+  padding: 40px 20px;
+}
+
+.zone-gallery-link {
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.zone-distances p {
+  margin: 5px 0;
+}
+
+.separator {
+  width: 90%;
+  height: 3px;
+  background-color: #c59d6b;
+  border: none;
+  border-radius: 2px;
+  margin: 20px auto;
+}
+/* Responsive adjustments for zones pages */
+@media (max-width: 768px) {
+  .zone-info-block {
+    padding: 16px;
+    margin: 20px auto;
+  }
+
+  .map-iframe {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,109 @@
+/* Updated layout for PropertyCardType3 */
+.property-card-type3 {
+  display: flex;
+  flex-direction: row; /* Default direction */
+  gap: 20px;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.property-card-type3.reverse {
+  flex-direction: row-reverse; /* Reverse the layout */
+}
+
+.text-zone {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+.text-zone h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h4 {
+  text-decoration: underline;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section li {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.image-zone {
+  flex: 1;
+  text-align: center;
+}
+
+.image-zone img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.view-gallery {
+  background-color: #c59d6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.view-gallery:hover {
+  background-color: #b08a5c;
+  transform: scale(1.05);
+}
+
+.view-gallery-button {
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .property-card-type3 {
+    flex-direction: column; /* Stack layout for mobile */
+  }
+
+  .property-card-type3.reverse {
+    flex-direction: column; /* Reset to column for mobile */
+  }
+
+  .text-zone {
+    padding: 10px;
+  }
+
+  .image-zone,
+  .text-zone {
+    width: 100%;
+  }
+}

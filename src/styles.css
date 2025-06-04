@@ -1,0 +1,196 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Variables globales */
+:root {
+  --color-primary: #ffffff;
+  --color-background: #212226;
+  --color-navbar-footer: #000000;
+  --color-accent: #c59d6b;
+  --color-footer-text: #727474;
+  --text-color: #fff;
+  --border-radius: 10px;
+  --spacing-large: 40px;
+  --spacing-medium: 20px;
+
+  --font-family: "Open Sans", sans-serif;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-semibold: 600;
+
+  --h1-size: 66.8px;
+  --h2-size: 50.8px;
+  --h3-size: 26.5px;
+  --paragraph-size: 18px;
+  --button-size: 21.7px;
+}
+
+/* Reset global */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  box-sizing: border-box;
+}
+
+/* Boutons généraux */
+button {
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: var(--color-accent);
+  color: #fff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b08a5c;
+  transform: scale(1.05);
+}
+
+/* Ajout pour éviter tout débordement */
+* {
+  box-sizing: border-box;
+}
+
+.zone-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 10px;
+  color: white;
+}
+
+.zone-description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+.zone-info-block {
+  border: 2px solid #c59d6b;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1c1d1f;
+  color: #fff;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+.map-iframe {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Page title */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 10px;
+  color: var(--text-color);
+}
+
+.bloc-premsa {
+  display: flex;
+  flex-direction: row; /* Affiche les articles en ligne */
+  gap: 16px; /* Espacement entre les articles */
+  margin-top: 24px; /* Espacement au-dessus de la section */
+}
+
+.bloc-premsa .article-card {
+  border: 1px solid #ddd; /* Bordure légère pour chaque article */
+  padding: 16px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  transition: transform 0.3s ease;
+}
+
+.bloc-premsa .article-card:hover {
+  transform: scale(1.02); /* Zoom léger au survol */
+}
+
+/* Global typography styles for H1 and H2 */
+h1 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.global-button {
+  background-color: #c59d6b;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.global-button:hover {
+  background-color: #a57f4f;
+  transform: scale(1.05);
+}
+
+.floating-buttons-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 36px;
+    --h2-size: 28px;
+    --h3-size: 20px;
+    --paragraph-size: 16px;
+    --button-size: 18px;
+  }
+
+  .zone-title,
+  .page-title {
+    font-size: var(--h2-size);
+  }
+
+  .zone-description {
+    font-size: var(--paragraph-size);
+    margin-bottom: 20px;
+  }
+
+  .bloc-premsa {
+    flex-direction: column;
+  }
+
+  .bloc-premsa .article-card {
+    margin-bottom: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2 {
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .global-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

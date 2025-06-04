@@ -1,0 +1,186 @@
+.property-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.property-card .main-image {
+  flex: 1;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles pour l'image principale */
+.main-image img {
+  width: 400px; /* Largeur fixe */
+  height: 400px; /* Hauteur fixe */
+  object-fit: cover; /* Remplit l'espace sans déformer */
+  display: block; /* Évite les espaces blancs autour de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 8px; /* Facultatif : ajoute des coins arrondis */
+}
+
+.property-card .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.property-card .details .discover-btn {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.thumbnails img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.prev-video,
+.next-video {
+  position: absolute;
+  top: 50%;
+  background: #c59d6b;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev-video {
+  left: 15px;
+}
+
+.next-video {
+  right: 15px;
+}
+
+.prev-video:hover,
+.next-video:hover {
+  background: #a47f54;
+}
+
+.info {
+  text-align: center;
+}
+
+.info .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info .location {
+  font-size: 1rem;
+  color: #c59d6b;
+  margin-bottom: 10px;
+}
+
+.info .description {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.discover-btn {
+  display: inline-block;
+  background-color: #c59d6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.discover-btn:hover {
+  background-color: #a47f54;
+}
+
+/* Responsive adjustments for PropertyCard */
+@media (max-width: 768px) {
+  .property-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .property-card .main-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .property-card .details {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .thumbnails {
+    flex-wrap: wrap; /* Allow thumbnails to wrap on smaller screens */
+    justify-content: center;
+  }
+
+  .thumbnails img {
+    width: 100px; /* Adjust thumbnail size for smaller screens */
+    height: 100px;
+  }
+
+  .prev-video,
+  .next-video {
+    display: none; /* Hide navigation buttons on smaller screens */
+  }
+
+  .info .title {
+    font-size: 1.2rem; /* Adjust title size for smaller screens */
+  }
+
+  .info .description {
+    font-size: 0.8rem; /* Adjust description size for smaller screens */
+  }
+
+  .discover-btn {
+    font-size: 0.9rem; /* Adjust button size for smaller screens */
+    padding: 8px 16px;
+  }
+
+  .property-card-title {
+    font-size: var(--h3-size);
+  }
+
+  .property-card-description {
+    font-size: var(--paragraph-size);
+  }
+
+  .property-card img {
+    max-width: 100%;
+    height: auto;
+  }
+}

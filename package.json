@@ -1,0 +1,53 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "React and TypeScript example starter project",
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
+  "homepage": "/",
+  "main": "src/index.tsx",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "ajv": "^8.17.1",
+    "framer-motion": "^12.8.2",
+    "loader-utils": "3.2.1",
+    "lucide-react": "^0.488.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.10.1",
+    "react-is": "^19.1.0",
+    "react-router-dom": "^6.30.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-router-hash-link": "^2.4.9",
+    "gh-pages": "^6.3.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build-gh": "react-scripts build && cp build/index.html build/404.html",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "GIT_CEILING_DIRECTORIES=/Users/olivierbourdeaut/Desktop/SuzanneVictor/acdinvest gh-pages -d build"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
