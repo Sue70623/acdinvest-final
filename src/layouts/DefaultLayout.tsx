@@ -27,13 +27,13 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
         <title>{title}</title>
         <meta name="description" content={description} />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVH380VGRT"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVH300V6RT"></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-KVH380VGRT');
+            gtag('config', 'G-KVH300V6RT');
           `}
         </script>
       </Helmet>
