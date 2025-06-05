@@ -13,8 +13,8 @@ const LaFreixeraII: React.FC = () => {
   const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   const images = [
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
-    // (ajouter les vraies images ici)
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+    // Remplacer par les vraies images
   ];
 
   const handleOpenGallery = () => setIsGalleryOpen(true);
@@ -45,7 +45,7 @@ const LaFreixeraII: React.FC = () => {
           backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
           title="La Freixera II"
           subtitle="Sant Julià de Lòria, Andorra"
-          alt="Edifici d'obra nova La Freixera II amb pisos lluminosos i àtics a Sant Julià de Lòria"
+          alt="Edifici La Freixera II a Sant Julià de Lòria"
         />
 
         <p className="zone-gallery-link" onClick={handleOpenGallery}>
@@ -140,7 +140,7 @@ const LaFreixeraII: React.FC = () => {
         <ArticleModal
           title="Serveis"
           content="5 plantes, 2 àtics, pàrquing, parada de bus, supermercat a 350 metres."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
           isOpen={isServeisModalOpen}
           onClose={closeServeisModal}
         />
@@ -148,7 +148,7 @@ const LaFreixeraII: React.FC = () => {
         <ArticleModal
           title="Entorn"
           content="Zona nord de Sant Julià, tranquil·litat amb serveis a prop i arquitectura contemporània."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
           isOpen={isEntornModalOpen}
           onClose={closeEntornModal}
         />

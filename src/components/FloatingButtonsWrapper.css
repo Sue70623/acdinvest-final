@@ -9,10 +9,11 @@
   z-index: 1000;
 }
 
+/* Harmonisation stricte de la forme circulaire pour tous les boutons flottants */
 .floating-button {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,40 +24,28 @@
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
-  background-color: #c59d6b; /* Default button color */
+  background-color: #c59d6b;
+  text-align: center;
 }
 
 .floating-button:hover {
   transform: scale(1.1);
-  background-color: #1da851; /* Darker green on hover */
+  background-color: #a47f54;
 }
 
-@media (max-width: 768px) {
-  .floating-button {
-    width: 50px;
-    height: 50px;
-    font-size: 1rem;
-  }
+.floating-button.tots-els-espais {
+  background-color: #c59d6b;
+  font-size: 0.65rem;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .floating-button {
-    width: 55px;
-    height: 55px;
-    font-size: 1.05rem;
-  }
-}
-
-/* Spécificités pour chaque bouton si besoin (ex: couleur WhatsApp) */
 .floating-button.chat-widget {
   background-color: #25d366;
 }
 
 .floating-button.chat-widget:active {
-  background-color: #c59d6b;
+  background-color: #25d366;
 }
 
-.floating-button.chat-widget a,
 .floating-button.chat-widget svg {
   color: #fff !important;
   line-height: 1;
@@ -69,6 +58,24 @@
   background-color: #c59d6b;
 }
 
-.floating-button.tots-els-espais {
-  background-color: #c59d6b;
+@media (max-width: 900px) {
+  .floating-button {
+    width: 55px;
+    height: 55px;
+    font-size: 1rem;
+  }
+  .floating-button.tots-els-espais {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .floating-button {
+    width: 50px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+  .floating-button.tots-els-espais {
+    font-size: 0.55rem;
+  }
 }

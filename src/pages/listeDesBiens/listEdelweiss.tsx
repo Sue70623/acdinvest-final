@@ -28,7 +28,7 @@ const ListEdelweiss: React.FC = () => {
       description="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel."
     >
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
         title="Edelweiss"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici Edelweiss a Andorra"
@@ -46,7 +46,7 @@ const ListEdelweiss: React.FC = () => {
 
       <PropertyCardType3
         title="Atic Edelweiss"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         caracteristics={["183 m²", "3 habitacios", "3 banys", "àtic dúplex"]}
         amenities={["Vistes muntanya", "grans finestres", "acabats moderns"]}
         status="Disponible"
@@ -65,7 +65,7 @@ const ListEdelweiss: React.FC = () => {
 
       <PropertyCardType3
         title="Plaça d'aparcament"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         caracteristics={["80m²"]}
         amenities={["Meublé"]}
         status="Disponible"
@@ -84,7 +84,7 @@ const ListEdelweiss: React.FC = () => {
 
       <PropertyCardType3
         title="Edelweiss 1"
-        image="https://via.placeholder.com/600x400?text=Edelweiss1"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         caracteristics={["100 m²", "3 habitacions", "2 banys"]}
         amenities={["parking", "terrassa"]}
         status="Disponible"
@@ -95,7 +95,7 @@ const ListEdelweiss: React.FC = () => {
       <h2 className="page-title">Dossier Edifici</h2>
       <PropertyCardType3
         title="Dossier Edifici"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
         caracteristics={[
           "6 pisos de 2 habitacions de 56 m2",
           "7 places de pàrquing",

@@ -1,7 +1,8 @@
 .floating-button.chat-widget {
   background-color: #25d366; /* WhatsApp green */
   color: #fff;
-  font-size: 2.1rem; /* Légèrement augmenté pour centrage visuel */
+  font-size: 3rem; /* Légèrement augmenté pour centrage visuel */
+  font-weight: semibold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@
 }
 
 .floating-button.chat-widget:active {
-  background-color: #c59d6b;
+  background-color: #25d366;
   transition: background-color 0.2s;
 }
 

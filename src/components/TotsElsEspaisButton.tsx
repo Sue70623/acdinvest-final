@@ -2,7 +2,7 @@ import React from "react";
 import "./TotsElsEspaisButton.css";
 
 interface TotsElsEspaisButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({
@@ -14,7 +14,7 @@ const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({
       onClick={onClick}
       type="button"
     >
-      Veure Tot
+      Tots els <br/>espais
     </button>
   );
 };

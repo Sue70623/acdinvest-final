@@ -59,6 +59,22 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
     images[(currentIndex + 2) % images.length],
   ];
 
+  function getAltFromImage(image: string, title: string): string {
+    if (image && image.includes("piscina")) return "Piscina i sol a Plana del Bou";
+    if (image && image.includes("fontaneda")) return "Vista de Fontaneda";
+    if (image && image.includes("escoles-sept"))
+      return "Edifici Escoles Sept a Sant Julià de Lòria";
+    if (image && image.includes("properament"))
+      return "Imatge properament disponible";
+    if (image && image.includes("noguer-b"))
+      return "Edifici El Noguer B a Sant Julià de Lòria";
+    if (image && image.includes("edelweiss"))
+      return "Edifici Edelweiss a la Seu d’Urgell";
+    if (image && image.includes("naus-hesei")) return "Naus industrials a Aixovall";
+    // fallback
+    return title || "Imatge de la propietat";
+  }
+
   return (
     <div className={`property-card-type2 ${reverse ? "reverse" : ""}`}>
       <div className="text-section">
@@ -84,7 +100,7 @@ const PropertyCardType2: React.FC<PropertyCardType2Props> = ({
         </button>
         <div className="carousel-frame">
           {visibleImages.map((image, index) => (
-            <img key={index} src={image} alt={title || "Property image"} />
+            <img key={index} src={image} alt={getAltFromImage(image, title)} />
           ))}
         </div>
         <button className="global-button next-video" onClick={next}>

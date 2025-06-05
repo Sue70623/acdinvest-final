@@ -13,7 +13,7 @@ const Edelweiss: React.FC = () => {
   const [isEntornModalOpen, setIsEntornModalOpen] = useState(false);
 
   const images = [
-    "https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
     // Remplacer par les vraies images
   ];
 
@@ -91,7 +91,7 @@ const Edelweiss: React.FC = () => {
         <ArticleModal
           title="Serveis"
           content="Àtics dúplex, trasters, places d’aparcament, pisos de dues habitacions."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
           isOpen={isServeisModalOpen}
           onClose={closeServeisModal}
         />
@@ -115,7 +115,7 @@ const Edelweiss: React.FC = () => {
         <ArticleModal
           title="Entorn"
           content="Entre muntanyes i ciutat, amb vistes espectaculars i una connexió fluïda amb l’exterior."
-          imageUrl="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477641/samples/outdoor-woman.jpg"
+          imageUrl="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
           isOpen={isEntornModalOpen}
           onClose={closeEntornModal}
         />

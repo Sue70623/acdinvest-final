@@ -10,6 +10,7 @@ const ContactForm: React.FC = () => {
     subject: "", // Added subject field
     message: "",
   });
+  const [sending, setSending] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,6 +22,7 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (form.current) {
+      setSending(true);
       // Envoi vers toi (Contact Us)
       emailjs
         .sendForm(
@@ -32,12 +34,12 @@ const ContactForm: React.FC = () => {
         .then(
           (result) => {},
           (error) => {
+            setSending(false);
             console.error("Erreur d'envoi (TOI):", error);
           }
         );
 
       // Envoi AutoReply vers l'utilisateur
-
       emailjs
         .sendForm(
           "service_zuhgizn",
@@ -47,15 +49,17 @@ const ContactForm: React.FC = () => {
         )
         .then(
           (result) => {
+            setSending(false);
+            if (form.current) (e.target as HTMLFormElement).reset();
             alert("Message envoyé avec succès !");
           },
           (error) => {
+            setSending(false);
             console.error("EmailJS error:", error); // Debugging log
             alert("Une erreur s'est produite lors de l'envoi du message.");
           }
         );
     } else {
-      console.error("Form reference is null."); // Debugging log
       alert("Une erreur s'est produite : le formulaire n'est pas référencé.");
     }
   };
@@ -93,8 +97,8 @@ const ContactForm: React.FC = () => {
         onChange={handleChange}
         required
       />
-      <button type="submit" className="global-button">
-        Enviar
+      <button type="submit" className="global-button" disabled={sending}>
+        {sending ? "Envoi..." : "Enviar"}
       </button>
     </form>
   );

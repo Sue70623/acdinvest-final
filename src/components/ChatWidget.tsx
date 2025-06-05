@@ -4,16 +4,14 @@ import "./ChatWidget.css";
 
 const ChatWidget: React.FC = () => {
   return (
-    <div className="floating-button chat-widget">
-      <a
-        href="https://chatwith.io/s/330631307849"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-      >
-        <FaWhatsapp />
-      </a>
-    </div>
+    <button
+      className="floating-button chat-widget"
+      aria-label="WhatsApp"
+      onClick={() => window.open("https://chatwith.io/s/330631307849", "_blank", "noopener,noreferrer")}
+      type="button"
+    >
+      <FaWhatsapp />
+    </button>
   );
 };
 

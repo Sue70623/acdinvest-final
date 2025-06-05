@@ -63,15 +63,21 @@
   transform: translateY(-50%);
   background: #c59d6b;
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: none;
-  padding: 10px;
+  width: 30px;
+  height: 36px;
+  padding: 0;
   cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.3s ease, background 0.3s ease;
-  z-index: 3;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  opacity: 0.95;
+  transition: opacity 0.3s, background 0.3s;
+  z-index: 20;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .prev-video {
@@ -115,6 +121,23 @@
 
 /* Responsive adjustments for Hero component */
 @media (max-width: 768px) {
+  .hero {
+    min-height: unset !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .video-container {
+    height: auto !important;
+    min-height: unset !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    overflow: visible !important;
+  }
+  /* Supprime l'espace au-dessus de la section suivante si besoin */
+  #els-nostres-espais {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
   .hero-title {
     font-size: var(--h2-size);
   }
@@ -127,6 +150,12 @@
     max-width: 100%;
     height: auto;
   }
+  .prev-video,
+  .next-video {
+    display: inline-block !important;
+    z-index: 20 !important;
+    opacity: 0.95;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -137,13 +166,10 @@
   }
   .prev-video,
   .next-video {
-    font-size: 1.5rem;
-    padding: 7px;
-    left: 4px;
-    right: 4px;
+    font-size: 1.1rem;
+    width: 30px;
+    height: 36px;
   }
-  .prev-video { left: 4px; }
-  .next-video { right: 4px; }
 }
 
 @media (max-width: 600px) {
@@ -154,11 +180,8 @@
   }
   .prev-video,
   .next-video {
-    font-size: 1.1rem;
-    padding: 5px;
-    left: 2px;
-    right: 2px;
+    font-size: 0.95rem;
+    width: 30px;
+    height: 36px;
   }
-  .prev-video { left: 2px; }
-  .next-video { right: 2px; }
 }

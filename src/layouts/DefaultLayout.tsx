@@ -22,28 +22,40 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 
   return (
-    <div className="default-layout">
+    <>
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVH380VGRT"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-KVH380VGRT');
+          `}
+        </script>
       </Helmet>
-      <NavBar />
-      <main>{children}</main>
-      <Footer />
-      <SideMenu
-        isOpen={isSideMenuOpen}
-        onClose={() => setIsSideMenuOpen(false)}
-      />
+      <div className="default-layout">
+        <NavBar />
+        <main>{children}</main>
+        <Footer />
+        <SideMenu
+          isOpen={isSideMenuOpen}
+          onClose={() => setIsSideMenuOpen(false)}
+        />
 
-      {/* Fixed buttons container */}
-      <div className="floating-buttons-container">
-        <div className="floating-buttons-wrapper">
-          <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
-          <ChatWidget />
-          <ScrollToTopButton />
+        {/* Fixed buttons container */}
+        <div className="floating-buttons-container">
+          <div className="floating-buttons-wrapper">
+            <TotsElsEspaisButton onClick={() => setIsSideMenuOpen(true)} />
+            <ChatWidget />
+            <ScrollToTopButton />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

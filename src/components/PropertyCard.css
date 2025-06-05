@@ -65,25 +65,29 @@
 .next-video {
   position: absolute;
   top: 50%;
-  background: #c59d6b;
-  border: none;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 36px;
+  background: rgba(197, 157, 107, 0.6);
   color: white;
   font-size: 20px;
+  border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s, opacity 0.2s;
 }
 
-.prev-video {
-  left: 15px;
-}
-
-.next-video {
-  right: 15px;
-}
+.prev-video { left: 15px; }
+.next-video { right: 15px; }
 
 .prev-video:hover,
 .next-video:hover {
-  background: #a47f54;
+  background: rgba(197, 157, 107, 0.85);
 }
 
 .info {
@@ -155,8 +159,25 @@
 
   .prev-video,
   .next-video {
-    display: none; /* Hide navigation buttons on smaller screens */
+    display: flex;
+    width: 24px;
+    height: 30px;
+    background: rgba(197,157,107,0.6);
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
   }
+ 
+  .prev-video {
+  left: -32px;
+}
+
+.next-video {
+  right: -32px;
+}
 
   .info .title {
     font-size: 1.2rem; /* Adjust title size for smaller screens */

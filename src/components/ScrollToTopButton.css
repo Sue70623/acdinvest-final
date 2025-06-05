@@ -1,39 +1,6 @@
-/* Les styles sont désormais centralisés dans FloatingButtonsWrapper.css pour la taille, la couleur, le radius, etc. */
-.scroll-to-top {
-  /* Peut rester vide ou ne contenir que des overrides spécifiques si besoin */
-}
+/* Ce fichier ne contient plus que des overrides spécifiques si besoin. Les tailles, couleurs, radius, etc. sont gérés dans FloatingButtonsWrapper.css. */
 
-/* Effet au survol */
 .scroll-to-top:hover {
   background-color: #b08a5c;
   transform: scale(1.1);
-}
-
-/* Responsive : ajustement pour mobile */
-@media (max-width: 768px) {
-  .scroll-to-top {
-    width: 50px;
-    height: 50px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .scroll-to-top {
-    width: 55px;
-    height: 55px;
-    font-size: 0.95rem;
-  }
-}
-
-.floating-button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  font-size: 0.85rem; /* empêche le débordement de texte */
-  padding: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
 }

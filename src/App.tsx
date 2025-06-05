@@ -15,7 +15,6 @@ import PlanaDelBou from "./pages/zones/PlanaDelBou";
 import EresdelPoble from "./pages/zones/EresdelPoble";
 import ElNoguerB from "./pages/zones/ElNoguerB";
 import EscolesSept from "./pages/zones/EscolesSept";
-import XiuletHauss from "./pages/zones/XiuletHauss";
 import LaFreixeraII from "./pages/zones/LaFreixeraII";
 import Edelweiss from "./pages/zones/Edelweiss";
 import NausHesei from "./pages/zones/NausHesei";
@@ -23,7 +22,6 @@ import ListPlanaDelBou from "./pages/listeDesBiens/listPlanaDelBou";
 import ListEresDelPoble from "./pages/listeDesBiens/listEresDelPoble";
 import ListElNoguerB from "./pages/listeDesBiens/listElNoguerB";
 import ListEscolesSept from "./pages/listeDesBiens/listEscolesSept";
-import ListXiuletHauss from "./pages/listeDesBiens/listXiuletHauss";
 import ListLaFreixeraII from "./pages/listeDesBiens/listLaFreixeraII";
 import ListEdelweiss from "./pages/listeDesBiens/listEdelweiss";
 import ListNausHesei from "./pages/listeDesBiens/listNausHesei";
@@ -55,7 +53,6 @@ export default function App() {
         <Route path="/Zones/EresdelPoble" element={<EresdelPoble />} />
         <Route path="/Zones/ElNoguerB" element={<ElNoguerB />} />
         <Route path="/Zones/EscolesSept" element={<EscolesSept />} />
-        <Route path="/Zones/XiuletHauss" element={<XiuletHauss />} />
         <Route path="/Zones/LaFreixeraII" element={<LaFreixeraII />} />
         <Route path="/Zones/Edelweiss" element={<Edelweiss />} />
         <Route path="/Zones/NausHesei" element={<NausHesei />} />
@@ -74,10 +71,6 @@ export default function App() {
         <Route
           path="/liste-des-biens/listEscolesSept"
           element={<ListEscolesSept />}
-        />
-        <Route
-          path="/liste-des-biens/listXiuletHauss"
-          element={<ListXiuletHauss />}
         />
         <Route
           path="/liste-des-biens/listLaFreixeraII"

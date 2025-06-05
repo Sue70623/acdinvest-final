@@ -48,6 +48,26 @@ const CustomModal: React.FC<CustomModalProps> = ({
     }
   };
 
+  function getAltFromImage(image: string, index: number): string {
+    if (image && image.includes("piscina"))
+      return "Piscina i sol a Plana del Bou";
+    if (image && image.includes("fontaneda")) return "Vista de Fontaneda";
+    if (
+      image &&
+      image.includes("escoles-sept")
+    )
+      return "Edifici Escoles Sept a Sant Julià de Lòria";
+    if (image && image.includes("properament"))
+      return "Imatge properament disponible";
+    if (image && image.includes("noguer-b"))
+      return "Edifici El Noguer B a Sant Julià de Lòria";
+    if (image && image.includes("edelweiss"))
+      return "Edifici Edelweiss a la Seu d’Urgell";
+    if (image && image.includes("naus-hesei")) return "Naus industrials a Aixovall";
+    // fallback
+    return `Imatge de la galeria ${index + 1}`;
+  }
+
   return (
     <div className="custom-modal" onKeyDown={handleKeyDown} tabIndex={0}>
       <div className="modal-overlay" onClick={onClose}></div>
@@ -66,7 +86,7 @@ const CustomModal: React.FC<CustomModalProps> = ({
                 className="image-item"
                 onClick={() => openLightbox(index)}
               >
-                <img src={image} alt={`Imatge de la galeria ${index + 1}`} />
+                <img src={image} alt={getAltFromImage(image, index)} />
               </div>
             ))}
           </div>

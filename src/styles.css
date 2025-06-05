@@ -38,13 +38,31 @@ body {
 }
 
 /* Boutons généraux */
-button {
+button :not(.floating-button):not(.chat-widget):not(.scroll-to-top):not(.tots-els-espais){
   border-radius: 8px;
   font-size: 16px;
   background-color: var(--color-accent);
   color: #fff;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+/* style.css — après la règle globale button */
+button.floating-button {
+  all: unset;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c59d6b;
+  color: white;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
 
 button:hover {
   background-color: #b08a5c;
@@ -55,6 +73,8 @@ button:hover {
 * {
   box-sizing: border-box;
 }
+
+
 
 .zone-title {
   text-align: center;

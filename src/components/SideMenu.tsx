@@ -44,11 +44,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
       <h2>Tots els espais</h2>
 
       <div style={{ marginBottom: "20px" }}>
-        <h3
-          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
+        <NavLink
+          to="/viu-la-natura"
+          style={{ textDecoration: "none" }}
         >
-          Viu la Natura
-        </h3>
+          <h3
+            style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px", cursor: "pointer" }}
+          >
+            Viu la Natura
+          </h3>
+        </NavLink>
         <ul style={{ listStyle: "none", padding: "0" }}>
           <li
             style={{
@@ -106,11 +111,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
       </div>
 
       <div style={{ marginBottom: "20px" }}>
-        <h3
-          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
+        <NavLink
+          to="/viu-la-ciutat"
+          style={{ textDecoration: "none" }}
         >
-          Viu la Ciutat
-        </h3>
+          <h3
+            style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px", cursor: "pointer" }}
+          >
+            Viu la Ciutat
+          </h3>
+        </NavLink>
         <ul style={{ listStyle: "none", padding: "0" }}>
           <li
             style={{
@@ -184,32 +194,6 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
               }}
             ></div>
             <NavLink
-              to="/Zones/XiuletHauss"
-              style={{ textDecoration: "none", color: "#ffffff" }}
-            >
-              Xiulet Hauss
-            </NavLink>
-          </li>
-          <li
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "10px",
-            }}
-          >
-            <div
-              style={{
-                width: "40px",
-                height: "40px",
-                backgroundImage:
-                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                borderRadius: "50%",
-                marginRight: "10px",
-              }}
-            ></div>
-            <NavLink
               to="/Zones/LaFreixeraII"
               style={{ textDecoration: "none", color: "#ffffff" }}
             >
@@ -246,11 +230,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
       </div>
 
       <div style={{ marginBottom: "20px" }}>
-        <h3
-          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
+        <NavLink
+          to="/poligon-i-industria"
+          style={{ textDecoration: "none" }}
         >
-          Polígon i Indústria
-        </h3>
+          <h3
+            style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px", cursor: "pointer" }}
+          >
+            Polígon i Indústria
+          </h3>
+        </NavLink>
         <ul style={{ listStyle: "none", padding: "0" }}>
           <li
             style={{
@@ -282,11 +271,16 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
       </div>
 
       <div style={{ marginBottom: "20px" }}>
-        <h3
-          style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px" }}
+        <NavLink
+          to="/espais-de-negoci"
+          style={{ textDecoration: "none" }}
         >
-          Espais de negoci
-        </h3>
+          <h3
+            style={{ color: "#c59d6b", fontWeight: "bold", marginBottom: "10px", cursor: "pointer" }}
+          >
+            Espais de negoci
+          </h3>
+        </NavLink>
         <ul style={{ listStyle: "none", padding: "0" }}>
           <li style={{ marginBottom: "10px", color: "#ffffff" }}>
             Coming soon...

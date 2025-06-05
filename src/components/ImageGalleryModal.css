@@ -131,18 +131,12 @@
   background: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 10px;
   cursor: pointer;
   z-index: 1200;
   border-radius: 50%;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.lightbox-close {
-  top: 20px;
-  right: 20px;
 }
 
 .lightbox-prev {
@@ -151,6 +145,11 @@
 
 .lightbox-next {
   right: 8px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(0,0,0,0.75);
 }
 
 @media (max-width: 1024px) {
