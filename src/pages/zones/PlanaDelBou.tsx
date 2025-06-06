@@ -26,7 +26,14 @@ const PlanaDelBou: React.FC = () => {
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sauna-private-borda-plana.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/sol-borda-plana-fontaneda.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouexterior/terrasa-borda-plana-del-bou.webp",
-    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/omba-i-piscina-plana-del-bou.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/omba-i-piscina-plana-del-bou.webp","https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Camp%20florit%20amb%20cirerer%20salvatge.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ermita%20de%20Fontaneda%20entre%20flors.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Flors%20de%20roca.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ginesta%20daurada%20al%20cor%20del%20bosc.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Jardi%20amb%20vistes%20a%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/L%20esperit%20de%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Sender%20entre%20bosca%20i%20llum.webp",
+
   ];
 
   const handleOpenGallery = () => {
@@ -54,6 +61,7 @@ const PlanaDelBou: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers Plana del Bou, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/zones/planadelbou" />
       </Helmet>
 
@@ -96,7 +104,7 @@ const PlanaDelBou: React.FC = () => {
         />
         <PropertyCardType2
           title="Serveis"
-          description="Piscina, gimnàs, spa, rutes de muntanya, espais comuns."
+          description="Piscina, gimnàs, spa,jacuzzi, rutes de muntanya, espais comuns."
           images={[
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/omba-i-piscina-plana-del-bou.webp",
             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/porta-resort-luxe.webp",
@@ -117,11 +125,14 @@ const PlanaDelBou: React.FC = () => {
           title="Entorn"
           description="Plenament integrat a la natura, amb vistes a les muntanyes i a prop de Fontaneda."
           images={[
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Camp%20florit%20amb%20cirerer%20salvatge.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ermita%20de%20Fontaneda%20entre%20flors.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Flors%20de%20roca.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ginesta%20daurada%20al%20cor%20del%20bosc.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Jardi%20amb%20vistes%20a%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/L%20esperit%20de%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Sender%20entre%20bosca%20i%20llum.webp",
+
           ]}
           buttonLabel="Ver Mas"
           link="/"

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import HeroType2 from "../../components/HeroType2";
 import QuiSomSection from "../../components/QuiSomSection";
+import { Helmet } from "react-helmet";
 
 const QuiSom = () => {
   return (
@@ -9,10 +10,19 @@ const QuiSom = () => {
       title="Qui Som"
       description="Descobriu més sobre ACD Invest i la nostra missió."
     >
+      <Helmet>
+        <title>Qui Som</title>
+        <meta
+          name="description"
+          content="Descobriu més sobre ACD Invest i la nostra missió."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/qui-som" />
+      </Helmet>
       <HeroType2
         backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
-        title="Plana del Bou"
-        subtitle="Un lloc únic envoltat de natura"
+        title="Qui Som ?"
+        subtitle=""
         alt="Descobriu la història i la missió d'ACD Invest"
       />
       <div style={{ marginTop: "2rem" }}>

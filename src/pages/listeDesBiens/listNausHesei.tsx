@@ -27,7 +27,7 @@ const ListNausHesei: React.FC = () => {
       description="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre."
     >
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp"
         title="Naus Hesei"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici Naus Hesei a Andorra"
@@ -38,6 +38,8 @@ const ListNausHesei: React.FC = () => {
           name="description"
           content="Découvrez les biens industriels disponibles dans le projet Naus Hesei, situés à l'entrée d'Andorre."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/naus-hesei/llista" />
       </Helmet>
 
       <h1 className="page-title">Béns disponibles – Naus Hesei</h1>
@@ -45,7 +47,7 @@ const ListNausHesei: React.FC = () => {
 
       <PropertyCardType3
         title="Naus Hesei"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp"
         caracteristics={[
           "Naus de 200-400m²",
           "alçades de 4 a 7m",

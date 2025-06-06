@@ -8,13 +8,15 @@ const videos = [
     link: "/qui-som",
     linkText: "Qui Som?",
     alt: "Vídeo sobre Estat d’Anim - Descobreix Quetx",
+    type: "video",
   },
   {
-    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    src: "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/planadelbouservies/resort-plana-del-bou.webp",
     title: "ELS NOSTRES ESPAIS",
     link: "/espais",
     linkText: "Trobar el teu",
-    alt: "Vídeo sobre Els Nostres Espais - Explora Quetx",
+    alt: "Image temporaire sur Els Nostres Espais - Explora Quetx",
+    type: "image",
   },
 ];
 
@@ -50,18 +52,31 @@ const Hero: React.FC = () => {
     <section className="hero">
       <div className="video-wrapper">
         <div className="video-container">
-          <video
-            autoPlay
-            loop={false} // ❌ Désactive la boucle pour passer à la vidéo suivante
-            muted
-            ref={videoRef}
-            key={currentVideo}
-            onEnded={nextVideo} // ✅ Passe à la prochaine vidéo quand celle-ci se termine
-          >
-            <source src={videos[currentVideo].src} type="video/mp4" />
-          </video>
+          {videos[currentVideo].type === "video" ? (
+            <video
+              autoPlay
+              loop={false} // ❌ Désactive la boucle pour passer à la vidéo suivante
+              muted
+              ref={videoRef}
+              key={currentVideo}
+              onEnded={nextVideo} // ✅ Passe à la prochaine vidéo quand celle-ci se termine
+            >
+              <source src={videos[currentVideo].src} type="video/mp4" />
+            </video>
+          ) : (
+            <img
+              src={videos[currentVideo].src}
+              alt={videos[currentVideo].alt}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "8px",
+              }}
+            />
+          )}
 
-          {/* H2 sur la vidéo */}
+          {/* H2 sur la vidéo ou image */}
           <h2 className="hero-title">{videos[currentVideo].title}</h2>
 
           {/* ✅ Lien dynamique */}

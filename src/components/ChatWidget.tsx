@@ -6,8 +6,10 @@ const ChatWidget: React.FC = () => {
   return (
     <button
       className="floating-button chat-widget"
-      aria-label="WhatsApp"
-      onClick={() => window.open("https://chatwith.io/s/330631307849", "_blank", "noopener,noreferrer")}
+      aria-label="Ouvrir la discussion WhatsApp"
+      tabIndex={0}
+      role="button"
+      onClick={() => window.open("https://chatwith.io/s/376335381", "_blank", "noopener,noreferrer")}
       type="button"
     >
       <FaWhatsapp />

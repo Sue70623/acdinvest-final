@@ -39,12 +39,13 @@ const ElNoguerB: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers El Noguer B, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/zones/el-noguer-b" />
       </Helmet>
 
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/el-noguer-b-1.webp"
           title="El Noguer B"
           subtitle="Sant Julià de Lòria, Andorra"
           alt="Edifici El Noguer B a Sant Julià de Lòria, pisos de 3 habitacions amb façana moderna de pedra i alumini"

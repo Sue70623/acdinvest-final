@@ -16,6 +16,7 @@ const EspaisDeNegoci = () => {
           name="description"
           content="Découvrez nos espaces de travail et bureaux à Andorre."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/espais-de-negoci" />
       </Helmet>
       <h1 className="type-page-title">ESPAIS DE NEGOCI</h1>
@@ -36,9 +37,9 @@ const EspaisDeNegoci = () => {
           "Miniature 1 de Plana Del Bou",
           "Miniature 2 de Plana Del Bou",
         ]}
-        zoneName="Plana Del Bou"
-        location="Zone du bien 1"
-        description="Description temporaire 1"
+        zoneName="Properament"
+        location="Properament"
+        description="Properament"
         link="*"
       />
 

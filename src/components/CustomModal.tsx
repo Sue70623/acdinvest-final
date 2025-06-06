@@ -69,12 +69,25 @@ const CustomModal: React.FC<CustomModalProps> = ({
   }
 
   return (
-    <div className="custom-modal" onKeyDown={handleKeyDown} tabIndex={0}>
+    <div
+      className="custom-modal"
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+      role="dialog"
+      aria-modal="true"
+      aria-label={title}
+    >
       <div className="modal-overlay" onClick={onClose}></div>
       <div className="modal-content">
         <div className="modal-header">
           <h2 className="modal-title">{title}</h2>
-          <button className="modal-close" onClick={onClose}>
+          <button
+            className="modal-close"
+            onClick={onClose}
+            aria-label="Fermer la fenêtre"
+            tabIndex={0}
+            role="button"
+          >
             ×
           </button>
         </div>

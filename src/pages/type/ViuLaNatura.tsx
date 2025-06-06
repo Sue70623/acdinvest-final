@@ -16,6 +16,7 @@ const ViuLaNatura = () => {
           name="description"
           content="Descobreix els nostres immobles envoltats de natura i viu en un entorn tranquil i verd."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/viu-la-natura" />
       </Helmet>
 

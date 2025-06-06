@@ -27,7 +27,7 @@ const ListEresDelPoble: React.FC = () => {
       description="Découvrez les maisons rurales disponibles dans le projet Eres del Poble, au cœur du village de Fontaneda."
     >
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/Fontaneda-front.webp"
         title="Eres del Poble"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici Eres del Poble a Fontaneda, Andorra"
@@ -38,6 +38,8 @@ const ListEresDelPoble: React.FC = () => {
           name="description"
           content="Descobreix les cases rurals disponibles al projecte Eres del Poble, al cor del poble de Fontaneda."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/eresdelpoble/llista" />
       </Helmet>
 
       <h1 className="page-title">Béns disponibles – Eres del Poble</h1>
@@ -45,7 +47,7 @@ const ListEresDelPoble: React.FC = () => {
 
       <PropertyCardType3
         title="Era de Cal Bou"
-        image="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477642/samples/upscale-face-1.jpg"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp"
         caracteristics={[
           "Arquitectura tradicional",
           "cases de pedra",
@@ -57,8 +59,13 @@ const ListEresDelPoble: React.FC = () => {
           handleOpenModal(
             "Era de Cal Bou",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+             "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/entrada-antic-era-cal-bou-fontaneda.webp",
+" https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/terrasa-sol-era-cal-bou-andorra.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/cuina-era-cal-bou.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/menjador-cuina-era-de-cal-bou.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/cheminea-era-de-cal-bou.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/habitacio-era-de-cal-bou.webp",
             ],
             "https://example.com/brochure-arguens.pdf"
           )
@@ -66,7 +73,7 @@ const ListEresDelPoble: React.FC = () => {
       />
       <PropertyCardType3
         title="Era de l'Ermita"
-        image="https://via.placeholder.com/600"
+        image="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/salo-era-ermita.webp"
         caracteristics={["120 m²", "4 habitacions", "3 banys"]}
         amenities={["jardí", "garatge"]}
         status="Llista d'espera"
@@ -74,8 +81,12 @@ const ListEresDelPoble: React.FC = () => {
           handleOpenModal(
             "Era de l'Ermita",
             [
-              "https://via.placeholder.com/600x400?text=Image1",
-              "https://via.placeholder.com/600x400?text=Image2",
+              "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/menjador-era-ermita2.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/cuina-era-ermita.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/habitacio-era-ermita.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/salo-era-ermita.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/entra-era-ermita.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(20)ERAERMITA1.2/vista-superior-era-ermita.webp",
             ],
             "https://example.com/brochure-arguens.pdf"
           )

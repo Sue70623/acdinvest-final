@@ -41,16 +41,18 @@ const Actualitats = () => {
       description="Restez informé des dernières actualités et événements d'ACD Invest."
     >
       <Helmet>
-        <title>Actualités - ACD Invest</title>
+        <title>Actualitats - ACD Invest</title>
         <meta
           name="description"
           content="Restez informé des dernières actualités et événements d'ACD Invest."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/actualitats" />
       </Helmet>
       <HeroType2
         backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
-        title="Plana del Bou"
-        subtitle="Un lloc únic envoltat de natura"
+        title="Actualitats"
+        subtitle=""
         alt="Notícies recents i esdeveniments d'ACD Invest"
       />
       <h1 className="page-title">Actualitats</h1>

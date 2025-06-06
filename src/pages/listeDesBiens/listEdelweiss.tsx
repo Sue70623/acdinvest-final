@@ -39,6 +39,8 @@ const ListEdelweiss: React.FC = () => {
           name="description"
           content="Découvrez les biens disponibles dans le projet Edelweiss, situés dans un cadre exceptionnel."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/edelweiss/llista" />
       </Helmet>
 
       <h1 className="page-title">Béns disponibles – Edelweiss</h1>

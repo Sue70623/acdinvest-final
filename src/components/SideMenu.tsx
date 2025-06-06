@@ -93,7 +93,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
                 width: "40px",
                 height: "40px",
                 backgroundImage:
-                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp')",
+                  "url('https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Fontaneda-400-400.webp')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "50%",

@@ -42,12 +42,13 @@ const NausHesei: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers Naus Hesei, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/zones/naus-hesei" />
       </Helmet>
 
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp"
           title="Naus Hesei"
           subtitle="Aixovall, Andorra"
           alt="Naus industrials modernes a Aixovall, Sant Julià de Lòria, amb accés per tràilers"

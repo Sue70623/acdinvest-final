@@ -41,6 +41,7 @@ const EscolesSept: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers Escoles Sept, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/zones/escolessept" />
       </Helmet>
 

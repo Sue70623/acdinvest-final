@@ -3,6 +3,7 @@ import DefaultLayout from "../../layouts/DefaultLayout";
 import PropertyCardType3 from "../../components/PropertyCardType3";
 import CustomModal from "../../components/CustomModal"; // Adjust the path if necessary
 import HeroType2 from "../../components/HeroType2";
+import { Helmet } from "react-helmet";
 
 const ListElNoguerB: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -280,8 +281,17 @@ const ListElNoguerB: React.FC = () => {
       title="Llista de béns - El Noguer B"
       description="Explora els béns disponibles al projecte El Noguer B, amb habitatges moderns i funcionals."
     >
+      <Helmet>
+        <title>Liste des biens - El Noguer B</title>
+        <meta
+          name="description"
+          content="Découvrez les biens disponibles dans le projet El Noguer B, situés dans un cadre exceptionnel."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/el-noguer-b/llista" />
+      </Helmet>
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/el-noguer-b-1.webp"
         title="El Noguer B"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici El Noguer B a Sant Julià de Lòria, "

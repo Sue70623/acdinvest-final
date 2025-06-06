@@ -2,6 +2,7 @@ import React from "react";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import HeroType2 from "../../components/HeroType2";
 import ContactForm from "../../components/ContactForm";
+import { Helmet } from "react-helmet";
 import "./Contact.css";
 
 const Contact: React.FC = () => {
@@ -10,10 +11,19 @@ const Contact: React.FC = () => {
       title="Contacta'ns"
       description="Pàgina de contacte per a ACD Invest"
     >
+      <Helmet>
+        <title>Contact</title>
+        <meta
+          name="description"
+          content="Contactez ACD Invest pour toute demande d'information ou de visite."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/contact" />
+      </Helmet>
       <div className="contact-page">
         <HeroType2
           backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
-          title="Bienvenue"
+          title="Benvingut"
           subtitle="Contacta'ns"
           alt="Poseu-vos en contacte amb l'equip d'ACD Invest"
         />

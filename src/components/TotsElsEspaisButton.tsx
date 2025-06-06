@@ -13,8 +13,11 @@ const TotsElsEspaisButton: React.FC<TotsElsEspaisButtonProps> = ({
       className="floating-button tots-els-espais"
       onClick={onClick}
       type="button"
+      aria-label="Afficher tous les espaces"
+      tabIndex={0}
+      role="button"
     >
-      Tots els <br/>espais
+      Tots els <br />espais
     </button>
   );
 };

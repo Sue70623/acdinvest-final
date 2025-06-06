@@ -30,8 +30,12 @@ const ListEscolesSept: React.FC = () => {
       bathrooms: 1,
       amenities: ["parking"],
       status: "Llista d'espera",
-      image: "/images/placeholder.jpg",
-      galleryImages: ["https://via.placeholder.com/600x400"],
+      image: "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/salo-escola-sept-1-1.webp",
+      galleryImages: ["https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/salo-escola-sept-1-1.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/habitacio-1-1-Escoles-7-andorra.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/habitacio1-1-1-Escoles-7-andorra.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/bany-1-1-Escola-7.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-1/sala-de-estar-1-1-Escola-7.webp",],
       brochureUrl:
         "https://quetx.net/imatges/projecteVivenda/32/dossier-escoles-sept-1-1.pdf",
     },
@@ -42,7 +46,7 @@ const ListEscolesSept: React.FC = () => {
       bathrooms: 1,
       amenities: ["parking"],
       status: "Llista d'espera",
-      image: "/images/placeholder.jpg",
+      image: "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Escoles%20Sept/Escoles%20Sept/EscSept1-2/terrasa-1-2-Escoles-7-Andorra.webp",
       galleryImages: ["https://via.placeholder.com/600x400"],
       brochureUrl:
         "https://quetx.net/imatges/projecteVivenda/33/dossier-escoles-sept-1-2.pdf",
@@ -163,7 +167,7 @@ const ListEscolesSept: React.FC = () => {
       description="Descobreix els béns disponibles al projecte Escoles Sept."
     >
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/escoles-7-obra-samantha-bosque.webp"
         title="Escoles Sept"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici Escoles Sept a Andorra"
@@ -172,8 +176,10 @@ const ListEscolesSept: React.FC = () => {
         <title>Llista de béns - Escoles Sept</title>
         <meta
           name="description"
-          content="Explora els béns disponibles al projecte Escoles Sept, amb espais amplis i lluminosos."
+          content="Descobreix els béns disponibles al projecte Escoles Sept, un habitatge únic al cor de Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/escolessept/llista" />
       </Helmet>
       <h1 className="page-title">Béns disponibles – Escoles Sept</h1>
       {properties.map((property, index) => (

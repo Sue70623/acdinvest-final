@@ -16,6 +16,7 @@ const ViuLaCiutat = () => {
           name="description"
           content="Découvrez nos biens immobiliers en ville. Profitez de la vie urbaine à Andorre."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/viu-la-ciutat" />
       </Helmet>
 

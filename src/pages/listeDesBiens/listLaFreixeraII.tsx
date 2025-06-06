@@ -335,7 +335,7 @@ const ListLaFreixeraII: React.FC = () => {
       description="Découvrez les biens disponibles dans le projet La Freixera II, un projet moderne et durable."
     >
       <HeroType2
-        backgroundImage="https://res.cloudinary.com/dkgbfvjrc/image/upload/v1745477630/samples/animals/reindeer.jpg"
+        backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
         title="La Freixera II"
         subtitle="Descobreix totes les vivendes disponibles"
         alt="Edifici La Freixera II a Sant Julià de Lòria"
@@ -346,6 +346,8 @@ const ListLaFreixeraII: React.FC = () => {
           name="description"
           content="Descobreix els béns disponibles al projecte La Freixera II, un projecte modern i sostenible."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://acdinvest.ad/zones/la-freixera-ii/llista" />
       </Helmet>
 
       <h1 className="page-title">Béns disponibles – La Freixera II</h1>

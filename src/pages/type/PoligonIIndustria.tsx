@@ -16,19 +16,16 @@ const PoligonIIndustria = () => {
           name="description"
           content="Découvrez nos biens industriels et espaces professionnels à Andorre."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/poligon-i-industria" />
       </Helmet>
-      <meta
-        name="description"
-        content="Descobreix les zones industrials i les propietats disponibles a Andorra."
-      />
       <h1 className="type-page-title">POLÍGON I INDUSTRIA</h1>
       <p className="type-page-description">
         Descobreix les nostres zones industrials i espais dissenyats per a
         activitats empresarials i logístiques.
       </p>
       <PropertyCard
-        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp"
+        mainImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/home/naus-hesei-capcalera.webp"
         mainImageAlt="Image principale de Plana Del Bou"
         thumbnails={[
           "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Naus%20Hesei/NauHesei/BulkResizePhotos.comN5n57/NAU%20M5N57%20PORTA.webp",

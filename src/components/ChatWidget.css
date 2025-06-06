@@ -1,23 +1,36 @@
 .floating-button.chat-widget {
   background-color: #25d366; /* WhatsApp green */
   color: #fff;
-  font-size: 3rem; /* Légèrement augmenté pour centrage visuel */
-  font-weight: semibold;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  line-height: 1; /* Pour éviter le décentrage vertical */
+  line-height: 1;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* Suppression du font-size ici, la taille est gérée sur le SVG */
 }
 
-.floating-button.chat-widget a,
 .floating-button.chat-widget svg {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
   color: #fff !important;
-  line-height: 1;
+  width: 2.2rem;
+  height: 2.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .floating-button.chat-widget svg {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
 
 .floating-button.chat-widget:active {

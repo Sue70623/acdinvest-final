@@ -20,6 +20,14 @@ const EresdelPoble: React.FC = () => {
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraDeCalBou/ERAdeCalBou/BulkResizePhotos.com%20(18)ERADECALBOU2/lluminos-sal-vista-muntanya-andorra.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/calma-muntanya-era-ermita-fontaneda.webp",
     "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/EraErmita/EraErmita/BulkResizePhotos.com%20(19)ERAERMITA1.1/menjador-rural-era-ermita-fontanedena.webp",
+    "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Camp%20florit%20amb%20cirerer%20salvatge.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ermita%20de%20Fontaneda%20entre%20flors.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Flors%20de%20roca.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ginesta%20daurada%20al%20cor%20del%20bosc.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Jardi%20amb%20vistes%20a%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/L%20esperit%20de%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Sender%20entre%20bosca%20i%20llum.webp",
+
   ];
 
   // State for gallery modal visibility
@@ -67,12 +75,13 @@ const EresdelPoble: React.FC = () => {
           name="description"
           content="Découvrez les biens immobiliers Eres del Poble, situés dans un cadre exceptionnel à Sant Julià de Lòria."
         />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://acdinvest.ad/zones/eresdelpoble" />
       </Helmet>
 
       <div className="zone-page">
         <HeroType2
-          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament.webp"
+          backgroundImage="https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/fontaneda.webp"
           title="Eres del Poble"
           subtitle="Fontaneda,Andorra"
           alt="Cases tradicionals a Fontaneda amb façanes de pedra i interiors modernitzats"
@@ -121,11 +130,14 @@ const EresdelPoble: React.FC = () => {
           title="Entorn"
           description="En plena muntanya, dins la zona antiga del poble, amb accés a camins naturals."
           images={[
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
-            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/general/Properament400-400.webp",
+            "https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Camp%20florit%20amb%20cirerer%20salvatge.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ermita%20de%20Fontaneda%20entre%20flors.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Flors%20de%20roca.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Ginesta%20daurada%20al%20cor%20del%20bosc.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Jardi%20amb%20vistes%20a%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/L%20esperit%20de%20la%20muntanya.webp",
+"https://ujyxlovgwtzguhiiabtw.supabase.co/storage/v1/object/public/acdinvestfoto/Entorn%20Fontaneda/Sender%20entre%20bosca%20i%20llum.webp",
+
           ]}
           buttonLabel="Ver Mas"
           link="/"
