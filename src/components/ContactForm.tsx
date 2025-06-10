@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
       emailjs
         .sendForm(
           "service_zuhgizn",
-          "template_c0oczmp", // <-- vers TOI (admin)
+          "template_ccoczmp", // <-- vers TOI (admin)
           form.current,
           "AYB2FEpYiuysRSuC-"
         )
