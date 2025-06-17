@@ -167,13 +167,15 @@
 @media (max-width: 600px) {
   .lightbox-prev,
   .lightbox-next {
-    font-size: 1.3rem;
-    padding: 5px;
-    left: 2px;
-    right: 2px;
+    font-size: 1rem !important;
+    padding: 2px !important;
+    width: 32px !important;
+    height: 32px !important;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  .lightbox-prev { left: 2px; }
-  .lightbox-next { right: 2px; }
+  .lightbox-prev { left: 2px; right: auto; }
+  .lightbox-next { right: 2px; left: auto; }
 }
 
 .lightbox-prev:focus,
