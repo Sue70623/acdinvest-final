@@ -9,7 +9,7 @@ const ChatWidget: React.FC = () => {
       aria-label="Ouvrir la discussion WhatsApp"
       tabIndex={0}
       role="button"
-      onClick={() => window.open("https://chatwith.io/s/376335381", "_blank", "noopener,noreferrer")}
+      onClick={() => window.open("https://services.tochat.be/es/api/business/send/76b9e3e6-6f6a-4229-ac8b-8069d610b5af", "_blank", "noopener,noreferrer")}
       type="button"
     >
       <FaWhatsapp />
